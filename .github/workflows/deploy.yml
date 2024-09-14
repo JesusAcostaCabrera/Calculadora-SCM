@@ -1,0 +1,47 @@
+name: Test and Deploy on Netlify
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Comprobar el repositorio
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      # Configurar Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # Instalar dependencias
+      - name: Install dependencies
+        run: npm install
+
+      # Ejecutar tests
+      - name: Run tests
+        run: npm test
+
+  deploy:
+    needs: test  # Este paso solo se ejecuta si el paso de tests pasa
+    runs-on: ubuntu-latest
+
+    steps:
+      # Comprobar el repositorio
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      # Desplegar en Netlify
+      - name: Deploy to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          npm install -g netlify-cli
+          netlify deploy --prod --dir=dist --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN

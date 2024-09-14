@@ -1,6 +1,5 @@
 # build output
 dist/
-# generated types
 .astro/
 
 # dependencies
@@ -12,6 +11,11 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Testing
+coverage/
+.jest/
+jest/
+
 
 # environment variables
 .env
@@ -22,3 +26,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Visual Studio Code settings
+.vscode/
+
+# Linting
+.eslintcache

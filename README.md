@@ -43,3 +43,4 @@ npm run test
 - **Jesus Acosta** ([JesusAcostaCabrera](https://github.com/JesusAcostaCabrera))
 - **Daniel Mateo** ([Daniel-Mateo](https://github.com/Daniel-Mateo))
 - **Francisco Rubén** ([francids](https://github.com/francids))
+- **Sebastian Mercado** ([sebasM2002](https://github.com/sebasM2002))

@@ -1,5 +1,5 @@
 ---
-
+import Calculator from '../components/CalculatorComponent/Calculator';
 ---
 
 <html lang="es">
@@ -9,8 +9,18 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Calculadora SCM</title>
+    <style>
+      .bg-pattern {
+        background-image: url('/dot-pattern.svg');
+        background-repeat: repeat;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Astro</h1>
+  <body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="absolute inset-0 bg-pattern"></div>
+    <main class="relative z-10">
+      <Calculator client:load />
+    </main>
   </body>
-</html>
+</html> 

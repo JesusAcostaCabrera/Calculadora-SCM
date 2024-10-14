@@ -11,7 +11,7 @@ Este proyecto es una calculadora interactiva construida con **Astro** como frame
 - **Jest**: Herramienta de pruebas unitarias.
 - **ESLint**: Linter para identificar errores de código y mantener estándares.
 
-### **Cómo correr el proyecto**
+### **Cómo correr el proyecto**:
 1. **Clonar el repositorio**:
    ```bash
    git clone https://github.com/JesusAcostaCabrera/Calculadora-SCM.git
@@ -31,13 +31,13 @@ Este proyecto es una calculadora interactiva construida con **Astro** como frame
    ```
    La aplicación estará disponible en `http://localhost:4321`.
 
-### **Cómo correr las pruebas**
+### **Cómo correr las pruebas**:
 Para ejecutar las pruebas unitarias con **Jest**, utiliza el siguiente comando:
 ```bash
 npm run test
 ```
 
-### **Contribuidores**
+### **Contribuidores**:
 - **John Del Rosario** ([JohnFSDev](https://github.com/JohnFSDev))
 - **Emily Cabrera** ([HezzTia](https://github.com/HezzTia))
 - **Jesus Acosta** ([JesusAcostaCabrera](https://github.com/JesusAcostaCabrera))

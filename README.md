@@ -41,6 +41,7 @@ npm run test
 - **John Del Rosario** ([JohnFSDev](https://github.com/JohnFSDev))
 - **Emily Cabrera** ([HezzTia](https://github.com/HezzTia))
 - **Jesus Acosta** ([JesusAcostaCabrera](https://github.com/JesusAcostaCabrera))
-- **Daniel Mateo** ([Daniel-Mateo](https://github.com/Daniel-Mateo))
 - **Francisco Rubén** ([francids](https://github.com/francids))
 - **Sebastian Mercado** ([sebasM2002](https://github.com/sebasM2002))
+- **Daniel Mateo** ([Daniel-Mateo](https://github.com/Daniel-Mateo))
+
